@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13FFEE501653694C001D94AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE4F1653694C001D94AB /* UIKit.framework */; };
+		13FFEE521653694C001D94AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE511653694C001D94AB /* Foundation.framework */; };
+		13FFEE541653694C001D94AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE531653694C001D94AB /* CoreGraphics.framework */; };
+		13FFEE5A1653694C001D94AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13FFEE581653694C001D94AB /* InfoPlist.strings */; };
+		13FFEE5C1653694C001D94AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FFEE5B1653694C001D94AB /* main.m */; };
+		13FFEE601653694C001D94AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FFEE5F1653694C001D94AB /* AppDelegate.m */; };
+		13FFEE621653694C001D94AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FFEE611653694C001D94AB /* Default.png */; };
+		13FFEE641653694C001D94AB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FFEE631653694C001D94AB /* Default@2x.png */; };
+		13FFEE661653694C001D94AB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13FFEE651653694C001D94AB /* Default-568h@2x.png */; };
+		13FFEE6E1653694C001D94AB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE6D1653694C001D94AB /* SenTestingKit.framework */; };
+		13FFEE6F1653694C001D94AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE4F1653694C001D94AB /* UIKit.framework */; };
+		13FFEE701653694C001D94AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE511653694C001D94AB /* Foundation.framework */; };
+		13FFEE781653694C001D94AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13FFEE761653694C001D94AB /* InfoPlist.strings */; };
+		13FFEE7B1653694C001D94AB /* UnityConnectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FFEE7A1653694C001D94AB /* UnityConnectorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13FFEE711653694C001D94AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13FFEE421653694C001D94AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13FFEE4A1653694C001D94AB;
+			remoteInfo = UnityConnector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13FFEE4B1653694C001D94AB /* UnityConnector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityConnector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FFEE4F1653694C001D94AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		13FFEE511653694C001D94AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13FFEE531653694C001D94AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		13FFEE571653694C001D94AB /* UnityConnector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnityConnector-Info.plist"; sourceTree = "<group>"; };
+		13FFEE591653694C001D94AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13FFEE5B1653694C001D94AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13FFEE5D1653694C001D94AB /* UnityConnector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnityConnector-Prefix.pch"; sourceTree = "<group>"; };
+		13FFEE5E1653694C001D94AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13FFEE5F1653694C001D94AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13FFEE611653694C001D94AB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		13FFEE631653694C001D94AB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		13FFEE651653694C001D94AB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		13FFEE6C1653694C001D94AB /* UnityConnectorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityConnectorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FFEE6D1653694C001D94AB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		13FFEE751653694C001D94AB /* UnityConnectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnityConnectorTests-Info.plist"; sourceTree = "<group>"; };
+		13FFEE771653694C001D94AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13FFEE791653694C001D94AB /* UnityConnectorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityConnectorTests.h; sourceTree = "<group>"; };
+		13FFEE7A1653694C001D94AB /* UnityConnectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityConnectorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13FFEE481653694C001D94AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFEE501653694C001D94AB /* UIKit.framework in Frameworks */,
+				13FFEE521653694C001D94AB /* Foundation.framework in Frameworks */,
+				13FFEE541653694C001D94AB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FFEE681653694C001D94AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFEE6E1653694C001D94AB /* SenTestingKit.framework in Frameworks */,
+				13FFEE6F1653694C001D94AB /* UIKit.framework in Frameworks */,
+				13FFEE701653694C001D94AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13FFEE401653694C001D94AB = {
+			isa = PBXGroup;
+			children = (
+				13FFEE551653694C001D94AB /* UnityConnector */,
+				13FFEE731653694C001D94AB /* UnityConnectorTests */,
+				13FFEE4E1653694C001D94AB /* Frameworks */,
+				13FFEE4C1653694C001D94AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13FFEE4C1653694C001D94AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13FFEE4B1653694C001D94AB /* UnityConnector.app */,
+				13FFEE6C1653694C001D94AB /* UnityConnectorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13FFEE4E1653694C001D94AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13FFEE4F1653694C001D94AB /* UIKit.framework */,
+				13FFEE511653694C001D94AB /* Foundation.framework */,
+				13FFEE531653694C001D94AB /* CoreGraphics.framework */,
+				13FFEE6D1653694C001D94AB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13FFEE551653694C001D94AB /* UnityConnector */ = {
+			isa = PBXGroup;
+			children = (
+				13FFEE5E1653694C001D94AB /* AppDelegate.h */,
+				13FFEE5F1653694C001D94AB /* AppDelegate.m */,
+				13FFEE561653694C001D94AB /* Supporting Files */,
+			);
+			path = UnityConnector;
+			sourceTree = "<group>";
+		};
+		13FFEE561653694C001D94AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13FFEE571653694C001D94AB /* UnityConnector-Info.plist */,
+				13FFEE581653694C001D94AB /* InfoPlist.strings */,
+				13FFEE5B1653694C001D94AB /* main.m */,
+				13FFEE5D1653694C001D94AB /* UnityConnector-Prefix.pch */,
+				13FFEE611653694C001D94AB /* Default.png */,
+				13FFEE631653694C001D94AB /* Default@2x.png */,
+				13FFEE651653694C001D94AB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13FFEE731653694C001D94AB /* UnityConnectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				13FFEE791653694C001D94AB /* UnityConnectorTests.h */,
+				13FFEE7A1653694C001D94AB /* UnityConnectorTests.m */,
+				13FFEE741653694C001D94AB /* Supporting Files */,
+			);
+			path = UnityConnectorTests;
+			sourceTree = "<group>";
+		};
+		13FFEE741653694C001D94AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13FFEE751653694C001D94AB /* UnityConnectorTests-Info.plist */,
+				13FFEE761653694C001D94AB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13FFEE4A1653694C001D94AB /* UnityConnector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FFEE7E1653694C001D94AB /* Build configuration list for PBXNativeTarget "UnityConnector" */;
+			buildPhases = (
+				13FFEE471653694C001D94AB /* Sources */,
+				13FFEE481653694C001D94AB /* Frameworks */,
+				13FFEE491653694C001D94AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnityConnector;
+			productName = UnityConnector;
+			productReference = 13FFEE4B1653694C001D94AB /* UnityConnector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13FFEE6B1653694C001D94AB /* UnityConnectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FFEE811653694C001D94AB /* Build configuration list for PBXNativeTarget "UnityConnectorTests" */;
+			buildPhases = (
+				13FFEE671653694C001D94AB /* Sources */,
+				13FFEE681653694C001D94AB /* Frameworks */,
+				13FFEE691653694C001D94AB /* Resources */,
+				13FFEE6A1653694C001D94AB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13FFEE721653694C001D94AB /* PBXTargetDependency */,
+			);
+			name = UnityConnectorTests;
+			productName = UnityConnectorTests;
+			productReference = 13FFEE6C1653694C001D94AB /* UnityConnectorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13FFEE421653694C001D94AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Toru Inoue";
+			};
+			buildConfigurationList = 13FFEE451653694C001D94AB /* Build configuration list for PBXProject "UnityConnector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13FFEE401653694C001D94AB;
+			productRefGroup = 13FFEE4C1653694C001D94AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13FFEE4A1653694C001D94AB /* UnityConnector */,
+				13FFEE6B1653694C001D94AB /* UnityConnectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13FFEE491653694C001D94AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFEE5A1653694C001D94AB /* InfoPlist.strings in Resources */,
+				13FFEE621653694C001D94AB /* Default.png in Resources */,
+				13FFEE641653694C001D94AB /* Default@2x.png in Resources */,
+				13FFEE661653694C001D94AB /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FFEE691653694C001D94AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFEE781653694C001D94AB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13FFEE6A1653694C001D94AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13FFEE471653694C001D94AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFEE5C1653694C001D94AB /* main.m in Sources */,
+				13FFEE601653694C001D94AB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13FFEE671653694C001D94AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FFEE7B1653694C001D94AB /* UnityConnectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13FFEE721653694C001D94AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13FFEE4A1653694C001D94AB /* UnityConnector */;
+			targetProxy = 13FFEE711653694C001D94AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13FFEE581653694C001D94AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13FFEE591653694C001D94AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13FFEE761653694C001D94AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13FFEE771653694C001D94AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13FFEE7C1653694C001D94AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13FFEE7D1653694C001D94AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13FFEE7F1653694C001D94AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnityConnector/UnityConnector-Prefix.pch";
+				INFOPLIST_FILE = "UnityConnector/UnityConnector-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13FFEE801653694C001D94AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnityConnector/UnityConnector-Prefix.pch";
+				INFOPLIST_FILE = "UnityConnector/UnityConnector-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		13FFEE821653694C001D94AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UnityConnector.app/UnityConnector";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnityConnector/UnityConnector-Prefix.pch";
+				INFOPLIST_FILE = "UnityConnectorTests/UnityConnectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		13FFEE831653694C001D94AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UnityConnector.app/UnityConnector";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnityConnector/UnityConnector-Prefix.pch";
+				INFOPLIST_FILE = "UnityConnectorTests/UnityConnectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13FFEE451653694C001D94AB /* Build configuration list for PBXProject "UnityConnector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FFEE7C1653694C001D94AB /* Debug */,
+				13FFEE7D1653694C001D94AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FFEE7E1653694C001D94AB /* Build configuration list for PBXNativeTarget "UnityConnector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FFEE7F1653694C001D94AB /* Debug */,
+				13FFEE801653694C001D94AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13FFEE811653694C001D94AB /* Build configuration list for PBXNativeTarget "UnityConnectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FFEE821653694C001D94AB /* Debug */,
+				13FFEE831653694C001D94AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13FFEE421653694C001D94AB /* Project object */;
+}
