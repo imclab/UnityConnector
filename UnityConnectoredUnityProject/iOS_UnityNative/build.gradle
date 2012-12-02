@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+
+				maven {
+					url('http://openbakery.org/repository/')
+					//url uri('/tmp/repo')
+				}
+				mavenCentral()
+    }
+    dependencies {
+        classpath group: 'org.openbakery', name: 'xcodePlugin', version: '0.6.+'
+    }
+}
+apply plugin: 'xcode'
+
+
+
+
+buildscript {
+   configurations.classpath.resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+xcodebuild {
+	sdk = 'iphoneos'
+	target = 'Unity-iPhone'
+	signIdentity = 'iPhone Developer: Toru Inoue'
+
+	//additionalParameters = "GCC_PREPROCESSOR_DEFINITIONS='TIME=" + System.currentTimeMillis() + "'"
+	//archiveVersion = "-1.0.0"
+}
+
+
+//keychain {
+//	certificateUri = 'http://myhost/Development.p12'
+//	certificatePassword = 'mypwd'
+//}
+
+//provisioning {
+//	mobileprovisionUri = 'http://myhost/Development.mobileprovision'
+//}
+
