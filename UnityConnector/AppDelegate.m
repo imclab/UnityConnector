@@ -23,6 +23,11 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 
+    
+    m_application = application;
+    m_launchOptions = [[NSDictionary alloc]init];
+    
+    
     messenger = [[MessengerSystem alloc] initWithBodyID:self withSelector:@selector(receiver:) withName:CONNECTOR_MASTER];
     KSUnityBooter * unityBoot = [[KSUnityBooter alloc]initKSUnityBooterWithMasterName:CONNECTOR_MASTER];
     
@@ -37,7 +42,15 @@
 }
 
 - (void)receiver:(NSNotification * )notif {
+    NSString * exec = [messenger getExecFromNotification:notif];
+    NSDictionary * dict = [messenger getTagValueDictionaryFromNotification:notif];
     
+    if ([exec isEqualToString:SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED]) {
+        [messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_INITIALIZE,
+         [messenger tag:@"application" val:m_application],
+         [messenger tag:@"launchOptions" val:m_launchOptions],
+         nil];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

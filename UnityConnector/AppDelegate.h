@@ -14,6 +14,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     MessengerSystem * messenger;
+    UIApplication * m_application;
+    NSDictionary * m_launchOptions;
 }
 
 @property (strong, nonatomic) UIWindow *window;
