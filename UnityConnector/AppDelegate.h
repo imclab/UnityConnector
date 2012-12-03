@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MessengerSystem.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#define CONNECTOR_MASTER   (@"CONNECTOR_MASTER")
+
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    MessengerSystem * messenger;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

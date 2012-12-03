@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139EA0E8166C6928001A29F0 /* KSUnityBooter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E2166C6928001A29F0 /* KSUnityBooter.mm */; };
+		139EA0E9166C6928001A29F0 /* KSUnityBooter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E2166C6928001A29F0 /* KSUnityBooter.mm */; };
+		139EA0EA166C6928001A29F0 /* MessengerIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E5166C6928001A29F0 /* MessengerIDGenerator.m */; };
+		139EA0EB166C6928001A29F0 /* MessengerIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E5166C6928001A29F0 /* MessengerIDGenerator.m */; };
+		139EA0EC166C6928001A29F0 /* MessengerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E7166C6928001A29F0 /* MessengerSystem.m */; };
+		139EA0ED166C6928001A29F0 /* MessengerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E7166C6928001A29F0 /* MessengerSystem.m */; };
+		139EA0F2166C6961001A29F0 /* SampleTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0F0166C6961001A29F0 /* SampleTitleViewController.m */; };
+		139EA0F3166C6961001A29F0 /* SampleTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0F0166C6961001A29F0 /* SampleTitleViewController.m */; };
+		139EA0F4166C6961001A29F0 /* SampleTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139EA0F1166C6961001A29F0 /* SampleTitleViewController.xib */; };
+		139EA0F5166C6961001A29F0 /* SampleTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139EA0F1166C6961001A29F0 /* SampleTitleViewController.xib */; };
 		13FFEE501653694C001D94AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE4F1653694C001D94AB /* UIKit.framework */; };
 		13FFEE521653694C001D94AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE511653694C001D94AB /* Foundation.framework */; };
 		13FFEE541653694C001D94AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE531653694C001D94AB /* CoreGraphics.framework */; };
@@ -34,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		139EA0E1166C6928001A29F0 /* KSUnityBooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSUnityBooter.h; sourceTree = "<group>"; };
+		139EA0E2166C6928001A29F0 /* KSUnityBooter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KSUnityBooter.mm; sourceTree = "<group>"; };
+		139EA0E4166C6928001A29F0 /* MessengerIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessengerIDGenerator.h; sourceTree = "<group>"; };
+		139EA0E5166C6928001A29F0 /* MessengerIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessengerIDGenerator.m; sourceTree = "<group>"; };
+		139EA0E6166C6928001A29F0 /* MessengerSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessengerSystem.h; sourceTree = "<group>"; };
+		139EA0E7166C6928001A29F0 /* MessengerSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessengerSystem.m; sourceTree = "<group>"; };
+		139EA0EF166C6961001A29F0 /* SampleTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTitleViewController.h; sourceTree = "<group>"; };
+		139EA0F0166C6961001A29F0 /* SampleTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTitleViewController.m; sourceTree = "<group>"; };
+		139EA0F1166C6961001A29F0 /* SampleTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTitleViewController.xib; sourceTree = "<group>"; };
 		13FFEE4B1653694C001D94AB /* UnityConnector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityConnector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FFEE4F1653694C001D94AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		13FFEE511653694C001D94AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,9 +98,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139EA0E0166C6928001A29F0 /* KSUnityBoot */ = {
+			isa = PBXGroup;
+			children = (
+				139EA0E1166C6928001A29F0 /* KSUnityBooter.h */,
+				139EA0E2166C6928001A29F0 /* KSUnityBooter.mm */,
+			);
+			path = KSUnityBoot;
+			sourceTree = "<group>";
+		};
+		139EA0E3166C6928001A29F0 /* MessengerSystem */ = {
+			isa = PBXGroup;
+			children = (
+				139EA0E4166C6928001A29F0 /* MessengerIDGenerator.h */,
+				139EA0E5166C6928001A29F0 /* MessengerIDGenerator.m */,
+				139EA0E6166C6928001A29F0 /* MessengerSystem.h */,
+				139EA0E7166C6928001A29F0 /* MessengerSystem.m */,
+			);
+			path = MessengerSystem;
+			sourceTree = "<group>";
+		};
+		139EA0EE166C6961001A29F0 /* SampleTitleViewControl */ = {
+			isa = PBXGroup;
+			children = (
+				139EA0EF166C6961001A29F0 /* SampleTitleViewController.h */,
+				139EA0F0166C6961001A29F0 /* SampleTitleViewController.m */,
+				139EA0F1166C6961001A29F0 /* SampleTitleViewController.xib */,
+			);
+			path = SampleTitleViewControl;
+			sourceTree = "<group>";
+		};
 		13FFEE401653694C001D94AB = {
 			isa = PBXGroup;
 			children = (
+				139EA0E0166C6928001A29F0 /* KSUnityBoot */,
+				139EA0E3166C6928001A29F0 /* MessengerSystem */,
 				13FFEE551653694C001D94AB /* UnityConnector */,
 				13FFEE731653694C001D94AB /* UnityConnectorTests */,
 				13FFEE4E1653694C001D94AB /* Frameworks */,
@@ -112,6 +163,7 @@
 		13FFEE551653694C001D94AB /* UnityConnector */ = {
 			isa = PBXGroup;
 			children = (
+				139EA0EE166C6961001A29F0 /* SampleTitleViewControl */,
 				13FFEE5E1653694C001D94AB /* AppDelegate.h */,
 				13FFEE5F1653694C001D94AB /* AppDelegate.m */,
 				13FFEE561653694C001D94AB /* Supporting Files */,
@@ -227,6 +279,7 @@
 				13FFEE621653694C001D94AB /* Default.png in Resources */,
 				13FFEE641653694C001D94AB /* Default@2x.png in Resources */,
 				13FFEE661653694C001D94AB /* Default-568h@2x.png in Resources */,
+				139EA0F4166C6961001A29F0 /* SampleTitleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13FFEE781653694C001D94AB /* InfoPlist.strings in Resources */,
+				139EA0F5166C6961001A29F0 /* SampleTitleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +317,10 @@
 			files = (
 				13FFEE5C1653694C001D94AB /* main.m in Sources */,
 				13FFEE601653694C001D94AB /* AppDelegate.m in Sources */,
+				139EA0E8166C6928001A29F0 /* KSUnityBooter.mm in Sources */,
+				139EA0EA166C6928001A29F0 /* MessengerIDGenerator.m in Sources */,
+				139EA0EC166C6928001A29F0 /* MessengerSystem.m in Sources */,
+				139EA0F2166C6961001A29F0 /* SampleTitleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13FFEE7B1653694C001D94AB /* UnityConnectorTests.m in Sources */,
+				139EA0E9166C6928001A29F0 /* KSUnityBooter.mm in Sources */,
+				139EA0EB166C6928001A29F0 /* MessengerIDGenerator.m in Sources */,
+				139EA0ED166C6928001A29F0 /* MessengerSystem.m in Sources */,
+				139EA0F3166C6961001A29F0 /* SampleTitleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +491,7 @@
 				13FFEE801653694C001D94AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13FFEE811653694C001D94AB /* Build configuration list for PBXNativeTarget "UnityConnectorTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +500,7 @@
 				13FFEE831653694C001D94AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

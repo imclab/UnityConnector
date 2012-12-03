@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "KSUnityBooter.h"
+#import "SampleTitleViewController.h"
+
 
 @implementation AppDelegate
 
@@ -19,10 +22,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+
+    messenger = [[MessengerSystem alloc] initWithBodyID:self withSelector:@selector(receiver:) withName:CONNECTOR_MASTER];
+    KSUnityBooter * unityBoot = [[KSUnityBooter alloc]initKSUnityBooterWithMasterName:CONNECTOR_MASTER];
+    
+    SampleTitleViewController * sampleVCont = [[SampleTitleViewController alloc]initSampleTitleViewControllerWithMasterName:CONNECTOR_MASTER];
+    
+    [self.window addSubview:sampleVCont.view];
+
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)receiver:(NSNotification * )notif {
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
