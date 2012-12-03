@@ -26,7 +26,7 @@ bool UnityParseCommandLine(int argc, char *argv[]);
 }
 
 - (void) receiver:(NSNotification * )notif {
-    NSString * exec = [messenger getExecFromNortification:notif];
+    NSString * exec = [messenger getExecFromNotification:notif];
     NSDictionary * dict = [messenger getTagValueDictionaryFromNotification:notif];
     
     
