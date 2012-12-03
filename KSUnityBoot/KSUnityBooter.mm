@@ -8,9 +8,9 @@
 
 #import "KSUnityBooter.h"
 
-//#import "AppController.h"
-//#import "RegisterClasses.h"
-//#import "RegisterMonoModules.h"
+#import "AppController.h"
+#import "RegisterClasses.h"
+#import "RegisterMonoModules.h"
 
 static const int constsection = 0;
 bool UnityParseCommandLine(int argc, char *argv[]);
@@ -37,10 +37,10 @@ bool UnityParseCommandLine(int argc, char *argv[]);
         UIApplication * application = [dict valueForKey:@"application"];
         NSDictionary * launchOptions = [dict valueForKey:@"launchOptions"];
         
-//        RegisterMonoModules();
-//        
-//        AppController * unityApp = [[AppController alloc]init];
-//        [unityApp application:application didFinishLaunchingWithOptions:launchOptions];
+        RegisterMonoModules();
+        
+        AppController * unityApp = [[AppController alloc]init];
+        [unityApp application:application didFinishLaunchingWithOptions:launchOptions];
     }
 }
 
