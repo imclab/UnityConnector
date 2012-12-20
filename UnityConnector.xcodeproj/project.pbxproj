@@ -699,7 +699,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"\ncp -Rf \"$PROJECT_DIR/iOSUnityApp/Data\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]\nthen cp -f \"$PROJECT_DIR\"/*.png \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/\"\n                          fi";
+			shellScript = "rm -rf \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"\ncp -Rf \"$PROJECT_DIR/iOSUnityApp/Data\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Data\"\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]\nthen cp -f \"$PROJECT_DIR/iOSUnityApp\"/*.png \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/\"\n                          fi";
 		};
 		13FFEE6A1653694C001D94AB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -874,6 +874,7 @@
 					"\"$(SRCROOT)/iOSUnityApp/Libraries\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DTARGET_IPHONE_SIMULATOR=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
