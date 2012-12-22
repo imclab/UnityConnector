@@ -21,6 +21,17 @@
     return self;
 }
 
+- (void) receiver:(NSNotification * )notif {
+	NSString * exec = [messenger getExecFromNotification:notif];
+	NSDictionary * dict = [messenger getTagValueDictionaryFromNotification:notif];
+	
+	if ([exec isEqualToString:SAMPLE_TITLEVIEWCONT_EXEC_GET_VIEW]) {
+		[messenger callback:notif,
+		 [messenger tag:@"view" val:self.view],
+		 nil];
+	}
+}
+
 - (IBAction)unityOnTapped:(id)sender {
     [messenger callParent:SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED, nil];
 }

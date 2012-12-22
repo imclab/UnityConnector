@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import "KSUnityBooter.h"
-#import "SampleTitleViewController.h"
 
+#import "SampleTitleViewController.h"
+#import "SamplePinViewControler.h"
 
 @implementation AppDelegate
 
@@ -19,8 +20,16 @@
     [super dealloc];
 }
 
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 
     
@@ -31,7 +40,7 @@
     messenger = [[MessengerSystem alloc] initWithBodyID:self withSelector:@selector(receiver:) withName:CONNECTOR_MASTER];
     KSUnityBooter * unityBoot = [[KSUnityBooter alloc]initKSUnityBooterWithMasterName:CONNECTOR_MASTER];
     
-    SampleTitleViewController * sampleVCont = [[SampleTitleViewController alloc]initSampleTitleViewControllerWithMasterName:CONNECTOR_MASTER];
+    sampleVCont = [[SampleTitleViewController alloc]initSampleTitleViewControllerWithMasterName:CONNECTOR_MASTER];
     
     [self.window addSubview:sampleVCont.view];
 
@@ -46,38 +55,80 @@
     NSDictionary * dict = [messenger getTagValueDictionaryFromNotification:notif];
     
     if ([exec isEqualToString:SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED]) {
+		
+		/*
+		 ignite Unity
+		 */
         [messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_INITIALIZE,
          [messenger tag:@"application" val:m_application],
          [messenger tag:@"launchOptions" val:m_launchOptions],
          nil];
+		
+	
+		/*
+		 generate pinView(back button inside.)
+		 */
+		SamplePinViewControler * samplePinViewCont = [[SamplePinViewControler alloc]init];
+		
+		/*
+		 set pinView to Unity-window after some seconds.(this is for experimental.)
+		 */
+		[messenger callMyself:CONNECTOR_MASTER_EXEC_SET_VIEW_TO_UNITYWINDOW,
+		 [messenger tag:@"view" val:samplePinViewCont.view],
+		 [messenger withDelay:5.0],
+		 nil];
     }
+	
+	if ([exec isEqualToString:CONNECTOR_MASTER_EXEC_SET_VIEW_TO_UNITYWINDOW]) {
+		NSLog(@"m_application %@",	[m_application windows]);
+		NSAssert([dict valueForKey:@"view"], @"view required");
+		
+		//get the view what want to append to Unity.
+		UIView * testView = [dict valueForKey:@"view"];
+		
+		//get window array of this app
+		NSArray * windowArray = [m_application windows];
+		
+//		for (UIWindow * window in [m_application windows]) {
+//			NSLog(@"[window subviews]	%@", [window subviews]);
+//		}
+		
+		//append view onto Unity-window
+		if (1 < [windowArray count]) {
+			[[windowArray objectAtIndex:1] addSubview:testView];
+		}
+	}
+
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (void)applicationWillResignActive:(UIApplication *)application {
+    [messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_WILLRESIGNACTIVE,
+     [messenger tag:@"application" val:application],
+     nil];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_DIDENTERBACKGROUND,
+     [messenger tag:@"application" val:application],
+     nil];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    [messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_WILLENTERFOREGROUND,
+     [messenger tag:@"application" val:application],
+     nil];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_DIDBECOMEACTIVE,
+     [messenger tag:@"application" val:application],
+     nil];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_WILLTERMINATE,
+     [messenger tag:@"application" val:application],
+     nil];
 }
 
 @end

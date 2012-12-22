@@ -94,7 +94,7 @@ AppController * unityApp;
         [unityApp applicationWillResignActive:[dict valueForKey:@"application"]];
     }
     
-    if ([exec isEqualToString:KS_UNITYBOOTER_EXEC_APPLICATIONWILLTERMINATE]) {
+    if ([exec isEqualToString:KS_UNITYBOOTER_EXEC_WILLTERMINATE]) {
         [unityApp applicationWillTerminate:[dict valueForKey:@"application"]];
     }
     

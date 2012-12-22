@@ -11,6 +11,10 @@
 		135C10ED166CBDA200ACD988 /* PlayerConnectionConfigFile in Resources */ = {isa = PBXBuildFile; fileRef = 135C10E0166CBDA200ACD988 /* PlayerConnectionConfigFile */; };
 		135C10EE166CBDA200ACD988 /* sharedassets0.assets in Resources */ = {isa = PBXBuildFile; fileRef = 135C10E1166CBDA200ACD988 /* sharedassets0.assets */; };
 		135C10EF166CBDA200ACD988 /* unity default resources in Resources */ = {isa = PBXBuildFile; fileRef = 135C10E2166CBDA200ACD988 /* unity default resources */; };
+		139A520C1685FA1100A4A48E /* SamplePinViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 139A520A1685FA1100A4A48E /* SamplePinViewControler.m */; };
+		139A520D1685FA1100A4A48E /* SamplePinViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 139A520A1685FA1100A4A48E /* SamplePinViewControler.m */; };
+		139A520E1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */; };
+		139A520F1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */; };
 		139EA0E8166C6928001A29F0 /* KSUnityBooter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E2166C6928001A29F0 /* KSUnityBooter.mm */; };
 		139EA0E9166C6928001A29F0 /* KSUnityBooter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0E2166C6928001A29F0 /* KSUnityBooter.mm */; };
 		139EA0F2166C6961001A29F0 /* SampleTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139EA0F0166C6961001A29F0 /* SampleTitleViewController.m */; };
@@ -101,28 +105,16 @@
 		13A198E1166CB8AE0056172B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A19885166CB8AD0056172B /* Icon.png */; };
 		13A198E2166CB8AE0056172B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A19886166CB8AD0056172B /* Icon@2x.png */; };
 		13A198E3166CB8AE0056172B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A19886166CB8AD0056172B /* Icon@2x.png */; };
-		13A198E4166CB8AE0056172B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13A19887166CB8AD0056172B /* Info.plist */; };
-		13A198E5166CB8AE0056172B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13A19887166CB8AD0056172B /* Info.plist */; };
-		13A198E6166CB8AE0056172B /* Assembly-CSharp-firstpass.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A19889166CB8AD0056172B /* Assembly-CSharp-firstpass.dll.s */; };
-		13A198E7166CB8AE0056172B /* Assembly-CSharp-firstpass.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A19889166CB8AD0056172B /* Assembly-CSharp-firstpass.dll.s */; };
-		13A198E8166CB8AE0056172B /* Assembly-UnityScript-firstpass.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988A166CB8AD0056172B /* Assembly-UnityScript-firstpass.dll.s */; };
-		13A198E9166CB8AE0056172B /* Assembly-UnityScript-firstpass.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988A166CB8AD0056172B /* Assembly-UnityScript-firstpass.dll.s */; };
-		13A198EA166CB8AE0056172B /* Assembly-UnityScript.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988B166CB8AD0056172B /* Assembly-UnityScript.dll.s */; };
-		13A198EB166CB8AE0056172B /* Assembly-UnityScript.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988B166CB8AD0056172B /* Assembly-UnityScript.dll.s */; };
-		13A198EC166CB8AE0056172B /* Boo.Lang.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988C166CB8AD0056172B /* Boo.Lang.dll.s */; };
-		13A198ED166CB8AE0056172B /* Boo.Lang.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988C166CB8AD0056172B /* Boo.Lang.dll.s */; };
 		13A198EE166CB8AE0056172B /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A1988D166CB8AD0056172B /* libiPhone-lib.a */; };
 		13A198EF166CB8AE0056172B /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A1988D166CB8AD0056172B /* libiPhone-lib.a */; };
-		13A198F0166CB8AE0056172B /* Mono.Security.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988E166CB8AD0056172B /* Mono.Security.dll.s */; };
-		13A198F1166CB8AE0056172B /* Mono.Security.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988E166CB8AD0056172B /* Mono.Security.dll.s */; };
 		13A198F2166CB8AE0056172B /* mscorlib.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988F166CB8AD0056172B /* mscorlib.dll.s */; };
 		13A198F3166CB8AE0056172B /* mscorlib.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A1988F166CB8AD0056172B /* mscorlib.dll.s */; };
 		13A198F4166CB8AE0056172B /* RegisterMonoModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13A19890166CB8AD0056172B /* RegisterMonoModules.cpp */; };
 		13A198F5166CB8AE0056172B /* RegisterMonoModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13A19890166CB8AD0056172B /* RegisterMonoModules.cpp */; };
-		13A198F6166CB8AE0056172B /* System.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A19892166CB8AD0056172B /* System.dll.s */; };
-		13A198F7166CB8AE0056172B /* System.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A19892166CB8AD0056172B /* System.dll.s */; };
 		13A198F8166CB8AE0056172B /* UnityEngine.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A19893166CB8AD0056172B /* UnityEngine.dll.s */; };
 		13A198F9166CB8AE0056172B /* UnityEngine.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 13A19893166CB8AD0056172B /* UnityEngine.dll.s */; };
+		13D3C4A71685D50700E1118B /* UnityConnector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13FFEE571653694C001D94AB /* UnityConnector-Info.plist */; };
+		13D3C4A81685D50700E1118B /* UnityConnector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13FFEE571653694C001D94AB /* UnityConnector-Info.plist */; };
 		13FFEE501653694C001D94AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE4F1653694C001D94AB /* UIKit.framework */; };
 		13FFEE521653694C001D94AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE511653694C001D94AB /* Foundation.framework */; };
 		13FFEE541653694C001D94AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FFEE531653694C001D94AB /* CoreGraphics.framework */; };
@@ -163,6 +155,9 @@
 		135C10E0166CBDA200ACD988 /* PlayerConnectionConfigFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlayerConnectionConfigFile; sourceTree = "<group>"; };
 		135C10E1166CBDA200ACD988 /* sharedassets0.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets0.assets; sourceTree = "<group>"; };
 		135C10E2166CBDA200ACD988 /* unity default resources */ = {isa = PBXFileReference; lastKnownFileType = file; path = "unity default resources"; sourceTree = "<group>"; };
+		139A52091685FA1100A4A48E /* SamplePinViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SamplePinViewControler.h; path = SamplePinViewControl/SamplePinViewControler.h; sourceTree = "<group>"; };
+		139A520A1685FA1100A4A48E /* SamplePinViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplePinViewControler.m; path = SamplePinViewControl/SamplePinViewControler.m; sourceTree = "<group>"; };
+		139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SamplePinViewControler.xib; path = SamplePinViewControl/SamplePinViewControler.xib; sourceTree = "<group>"; };
 		139EA0E1166C6928001A29F0 /* KSUnityBooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSUnityBooter.h; sourceTree = "<group>"; };
 		139EA0E2166C6928001A29F0 /* KSUnityBooter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KSUnityBooter.mm; sourceTree = "<group>"; };
 		139EA0EF166C6961001A29F0 /* SampleTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTitleViewController.h; sourceTree = "<group>"; };
@@ -225,17 +220,10 @@
 		13A19884166CB8AD0056172B /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		13A19885166CB8AD0056172B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		13A19886166CB8AD0056172B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		13A19887166CB8AD0056172B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13A19889166CB8AD0056172B /* Assembly-CSharp-firstpass.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "Assembly-CSharp-firstpass.dll.s"; sourceTree = "<group>"; };
-		13A1988A166CB8AD0056172B /* Assembly-UnityScript-firstpass.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "Assembly-UnityScript-firstpass.dll.s"; sourceTree = "<group>"; };
-		13A1988B166CB8AD0056172B /* Assembly-UnityScript.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "Assembly-UnityScript.dll.s"; sourceTree = "<group>"; };
-		13A1988C166CB8AD0056172B /* Boo.Lang.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = Boo.Lang.dll.s; sourceTree = "<group>"; };
 		13A1988D166CB8AD0056172B /* libiPhone-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libiPhone-lib.a"; sourceTree = "<group>"; };
-		13A1988E166CB8AD0056172B /* Mono.Security.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = Mono.Security.dll.s; sourceTree = "<group>"; };
 		13A1988F166CB8AD0056172B /* mscorlib.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = mscorlib.dll.s; sourceTree = "<group>"; };
 		13A19890166CB8AD0056172B /* RegisterMonoModules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegisterMonoModules.cpp; sourceTree = "<group>"; };
 		13A19891166CB8AD0056172B /* RegisterMonoModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMonoModules.h; sourceTree = "<group>"; };
-		13A19892166CB8AD0056172B /* System.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = System.dll.s; sourceTree = "<group>"; };
 		13A19893166CB8AD0056172B /* UnityEngine.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = UnityEngine.dll.s; sourceTree = "<group>"; };
 		13FFEE4B1653694C001D94AB /* UnityConnector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityConnector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FFEE4F1653694C001D94AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -362,6 +350,16 @@
 			path = 2.0;
 			sourceTree = "<group>";
 		};
+		139A52071685F9EE00A4A48E /* SamplePinViewControl */ = {
+			isa = PBXGroup;
+			children = (
+				139A52091685FA1100A4A48E /* SamplePinViewControler.h */,
+				139A520A1685FA1100A4A48E /* SamplePinViewControler.m */,
+				139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */,
+			);
+			name = SamplePinViewControl;
+			sourceTree = "<group>";
+		};
 		139EA0E0166C6928001A29F0 /* KSUnityBoot */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,7 +406,6 @@
 				13A19884166CB8AD0056172B /* Icon-72.png */,
 				13A19885166CB8AD0056172B /* Icon.png */,
 				13A19886166CB8AD0056172B /* Icon@2x.png */,
-				13A19887166CB8AD0056172B /* Info.plist */,
 				13A19888166CB8AD0056172B /* Libraries */,
 			);
 			path = iOSUnityApp;
@@ -457,16 +454,10 @@
 		13A19888166CB8AD0056172B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				13A19889166CB8AD0056172B /* Assembly-CSharp-firstpass.dll.s */,
-				13A1988A166CB8AD0056172B /* Assembly-UnityScript-firstpass.dll.s */,
-				13A1988B166CB8AD0056172B /* Assembly-UnityScript.dll.s */,
-				13A1988C166CB8AD0056172B /* Boo.Lang.dll.s */,
 				13A1988D166CB8AD0056172B /* libiPhone-lib.a */,
-				13A1988E166CB8AD0056172B /* Mono.Security.dll.s */,
 				13A1988F166CB8AD0056172B /* mscorlib.dll.s */,
 				13A19890166CB8AD0056172B /* RegisterMonoModules.cpp */,
 				13A19891166CB8AD0056172B /* RegisterMonoModules.h */,
-				13A19892166CB8AD0056172B /* System.dll.s */,
 				13A19893166CB8AD0056172B /* UnityEngine.dll.s */,
 			);
 			path = Libraries;
@@ -484,6 +475,7 @@
 				13FFEE4C1653694C001D94AB /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		13FFEE4C1653694C001D94AB /* Products */ = {
 			isa = PBXGroup;
@@ -525,6 +517,7 @@
 		13FFEE551653694C001D94AB /* UnityConnector */ = {
 			isa = PBXGroup;
 			children = (
+				139A52071685F9EE00A4A48E /* SamplePinViewControl */,
 				139EA0EE166C6961001A29F0 /* SampleTitleViewControl */,
 				13FFEE5E1653694C001D94AB /* AppDelegate.h */,
 				13FFEE5F1653694C001D94AB /* AppDelegate.m */,
@@ -655,11 +648,12 @@
 				13A198DE166CB8AE0056172B /* Icon-72.png in Resources */,
 				13A198E0166CB8AE0056172B /* Icon.png in Resources */,
 				13A198E2166CB8AE0056172B /* Icon@2x.png in Resources */,
-				13A198E4166CB8AE0056172B /* Info.plist in Resources */,
 				135C10E3166CBDA200ACD988 /* mainData in Resources */,
 				135C10ED166CBDA200ACD988 /* PlayerConnectionConfigFile in Resources */,
 				135C10EE166CBDA200ACD988 /* sharedassets0.assets in Resources */,
 				135C10EF166CBDA200ACD988 /* unity default resources in Resources */,
+				13D3C4A71685D50700E1118B /* UnityConnector-Info.plist in Resources */,
+				139A520E1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +675,8 @@
 				13A198DF166CB8AE0056172B /* Icon-72.png in Resources */,
 				13A198E1166CB8AE0056172B /* Icon.png in Resources */,
 				13A198E3166CB8AE0056172B /* Icon@2x.png in Resources */,
-				13A198E5166CB8AE0056172B /* Info.plist in Resources */,
+				13D3C4A81685D50700E1118B /* UnityConnector-Info.plist in Resources */,
+				139A520F1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,15 +733,10 @@
 				13A198AE166CB8AE0056172B /* ActivityIndicator.mm in Sources */,
 				13A198B0166CB8AE0056172B /* SplashScreen.mm in Sources */,
 				13A198B2166CB8AE0056172B /* VideoViewController.mm in Sources */,
-				13A198E6166CB8AE0056172B /* Assembly-CSharp-firstpass.dll.s in Sources */,
-				13A198E8166CB8AE0056172B /* Assembly-UnityScript-firstpass.dll.s in Sources */,
-				13A198EA166CB8AE0056172B /* Assembly-UnityScript.dll.s in Sources */,
-				13A198EC166CB8AE0056172B /* Boo.Lang.dll.s in Sources */,
-				13A198F0166CB8AE0056172B /* Mono.Security.dll.s in Sources */,
 				13A198F2166CB8AE0056172B /* mscorlib.dll.s in Sources */,
 				13A198F4166CB8AE0056172B /* RegisterMonoModules.cpp in Sources */,
-				13A198F6166CB8AE0056172B /* System.dll.s in Sources */,
 				13A198F8166CB8AE0056172B /* UnityEngine.dll.s in Sources */,
+				139A520C1685FA1100A4A48E /* SamplePinViewControler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,15 +760,10 @@
 				13A198AF166CB8AE0056172B /* ActivityIndicator.mm in Sources */,
 				13A198B1166CB8AE0056172B /* SplashScreen.mm in Sources */,
 				13A198B3166CB8AE0056172B /* VideoViewController.mm in Sources */,
-				13A198E7166CB8AE0056172B /* Assembly-CSharp-firstpass.dll.s in Sources */,
-				13A198E9166CB8AE0056172B /* Assembly-UnityScript-firstpass.dll.s in Sources */,
-				13A198EB166CB8AE0056172B /* Assembly-UnityScript.dll.s in Sources */,
-				13A198ED166CB8AE0056172B /* Boo.Lang.dll.s in Sources */,
-				13A198F1166CB8AE0056172B /* Mono.Security.dll.s in Sources */,
 				13A198F3166CB8AE0056172B /* mscorlib.dll.s in Sources */,
 				13A198F5166CB8AE0056172B /* RegisterMonoModules.cpp in Sources */,
-				13A198F7166CB8AE0056172B /* System.dll.s in Sources */,
 				13A198F9166CB8AE0056172B /* UnityEngine.dll.s in Sources */,
+				139A520D1685FA1100A4A48E /* SamplePinViewControler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +851,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "compiler-default";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnityConnector/UnityConnector-Prefix.pch";
 				INFOPLIST_FILE = "UnityConnector/UnityConnector-Info.plist";
@@ -885,6 +871,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "compiler-default";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnityConnector/UnityConnector-Prefix.pch";
 				INFOPLIST_FILE = "UnityConnector/UnityConnector-Info.plist";
