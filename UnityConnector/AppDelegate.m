@@ -63,40 +63,16 @@ void uncaughtExceptionHandler(NSException *exception) {
          [messenger tag:@"application" val:m_application],
          [messenger tag:@"launchOptions" val:m_launchOptions],
          nil];
-		
+	}
 	
+	if ([exec isEqualToString:KS_UNITYBOOTER_EXEC_VIEWCANBEAPPEND]) {
 		/*
 		 generate pinView(back button inside.)
 		 */
 		SamplePinViewControler * samplePinViewCont = [[SamplePinViewControler alloc]init];
-		
-		/*
-		 set pinView to Unity-window after some seconds.(this is for experimental.)
-		 */
-		[messenger callMyself:CONNECTOR_MASTER_EXEC_SET_VIEW_TO_UNITYWINDOW,
+		[messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_ADD_VIEW,
 		 [messenger tag:@"view" val:samplePinViewCont.view],
-		 [messenger withDelay:5.0],
 		 nil];
-    }
-	
-	if ([exec isEqualToString:CONNECTOR_MASTER_EXEC_SET_VIEW_TO_UNITYWINDOW]) {
-		NSLog(@"m_application %@",	[m_application windows]);
-		NSAssert([dict valueForKey:@"view"], @"view required");
-		
-		//get the view what want to append to Unity.
-		UIView * testView = [dict valueForKey:@"view"];
-		
-		//get window array of this app
-		NSArray * windowArray = [m_application windows];
-		
-//		for (UIWindow * window in [m_application windows]) {
-//			NSLog(@"[window subviews]	%@", [window subviews]);
-//		}
-		
-		//append view onto Unity-window
-		if (1 < [windowArray count]) {
-			[[windowArray objectAtIndex:1] addSubview:testView];
-		}
 	}
 
 }

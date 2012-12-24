@@ -7,6 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1392772D16881AD6005B80BA /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276EE16881AD6005B80BA /* AppController.mm */; };
+		1392772E16881AD6005B80BA /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276EE16881AD6005B80BA /* AppController.mm */; };
+		1392772F16881AD6005B80BA /* iPhone_GlesSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139276F016881AD6005B80BA /* iPhone_GlesSupport.cpp */; };
+		1392773016881AD6005B80BA /* iPhone_GlesSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139276F016881AD6005B80BA /* iPhone_GlesSupport.cpp */; };
+		1392773116881AD6005B80BA /* iPhone_OrientationSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276F316881AD6005B80BA /* iPhone_OrientationSupport.mm */; };
+		1392773216881AD6005B80BA /* iPhone_OrientationSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276F316881AD6005B80BA /* iPhone_OrientationSupport.mm */; };
+		1392773316881AD6005B80BA /* iPhone_Profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139276F416881AD6005B80BA /* iPhone_Profiler.cpp */; };
+		1392773416881AD6005B80BA /* iPhone_Profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139276F416881AD6005B80BA /* iPhone_Profiler.cpp */; };
+		1392773516881AD6005B80BA /* iPhone_Sensors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276F716881AD6005B80BA /* iPhone_Sensors.mm */; };
+		1392773616881AD6005B80BA /* iPhone_Sensors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276F716881AD6005B80BA /* iPhone_Sensors.mm */; };
+		1392773716881AD6005B80BA /* iPhone_target2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 139276F916881AD6005B80BA /* iPhone_target2AppDelegate.m */; };
+		1392773816881AD6005B80BA /* iPhone_target2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 139276F916881AD6005B80BA /* iPhone_target2AppDelegate.m */; };
+		1392773916881AD6005B80BA /* iPhone_View.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276FC16881AD6005B80BA /* iPhone_View.mm */; };
+		1392773A16881AD6005B80BA /* iPhone_View.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139276FC16881AD6005B80BA /* iPhone_View.mm */; };
+		1392773D16881AD6005B80BA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139276FE16881AD6005B80BA /* MainWindow.xib */; };
+		1392773E16881AD6005B80BA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139276FE16881AD6005B80BA /* MainWindow.xib */; };
+		1392773F16881AD6005B80BA /* RegisterClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139276FF16881AD6005B80BA /* RegisterClasses.cpp */; };
+		1392774016881AD6005B80BA /* RegisterClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139276FF16881AD6005B80BA /* RegisterClasses.cpp */; };
+		1392774116881AD6005B80BA /* ActivityIndicator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1392770316881AD6005B80BA /* ActivityIndicator.mm */; };
+		1392774216881AD6005B80BA /* ActivityIndicator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1392770316881AD6005B80BA /* ActivityIndicator.mm */; };
+		1392774316881AD6005B80BA /* SplashScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1392770516881AD6005B80BA /* SplashScreen.mm */; };
+		1392774416881AD6005B80BA /* SplashScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1392770516881AD6005B80BA /* SplashScreen.mm */; };
+		1392774516881AD6005B80BA /* VideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1392770716881AD6005B80BA /* VideoViewController.mm */; };
+		1392774616881AD6005B80BA /* VideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1392770716881AD6005B80BA /* VideoViewController.mm */; };
+		1392774716881AD6005B80BA /* mainData in Resources */ = {isa = PBXBuildFile; fileRef = 1392770916881AD6005B80BA /* mainData */; };
+		1392774816881AD6005B80BA /* mainData in Resources */ = {isa = PBXBuildFile; fileRef = 1392770916881AD6005B80BA /* mainData */; };
+		1392774916881AD7005B80BA /* Assembly-CSharp.dll in Resources */ = {isa = PBXBuildFile; fileRef = 1392770B16881AD6005B80BA /* Assembly-CSharp.dll */; };
+		1392774A16881AD7005B80BA /* Assembly-CSharp.dll in Resources */ = {isa = PBXBuildFile; fileRef = 1392770B16881AD6005B80BA /* Assembly-CSharp.dll */; };
+		1392774B16881AD7005B80BA /* machine.config in Resources */ = {isa = PBXBuildFile; fileRef = 1392770E16881AD6005B80BA /* machine.config */; };
+		1392774C16881AD7005B80BA /* machine.config in Resources */ = {isa = PBXBuildFile; fileRef = 1392770E16881AD6005B80BA /* machine.config */; };
+		1392774D16881AD7005B80BA /* mscorlib.dll in Resources */ = {isa = PBXBuildFile; fileRef = 1392770F16881AD6005B80BA /* mscorlib.dll */; };
+		1392774E16881AD7005B80BA /* mscorlib.dll in Resources */ = {isa = PBXBuildFile; fileRef = 1392770F16881AD6005B80BA /* mscorlib.dll */; };
+		1392774F16881AD7005B80BA /* UnityEngine.dll in Resources */ = {isa = PBXBuildFile; fileRef = 1392771016881AD6005B80BA /* UnityEngine.dll */; };
+		1392775016881AD7005B80BA /* UnityEngine.dll in Resources */ = {isa = PBXBuildFile; fileRef = 1392771016881AD6005B80BA /* UnityEngine.dll */; };
+		1392775116881AD7005B80BA /* PlayerConnectionConfigFile in Resources */ = {isa = PBXBuildFile; fileRef = 1392771116881AD6005B80BA /* PlayerConnectionConfigFile */; };
+		1392775216881AD7005B80BA /* PlayerConnectionConfigFile in Resources */ = {isa = PBXBuildFile; fileRef = 1392771116881AD6005B80BA /* PlayerConnectionConfigFile */; };
+		1392775316881AD7005B80BA /* sharedassets0.assets in Resources */ = {isa = PBXBuildFile; fileRef = 1392771216881AD6005B80BA /* sharedassets0.assets */; };
+		1392775416881AD7005B80BA /* sharedassets0.assets in Resources */ = {isa = PBXBuildFile; fileRef = 1392771216881AD6005B80BA /* sharedassets0.assets */; };
+		1392775516881AD7005B80BA /* unity default resources in Resources */ = {isa = PBXBuildFile; fileRef = 1392771316881AD6005B80BA /* unity default resources */; };
+		1392775616881AD7005B80BA /* unity default resources in Resources */ = {isa = PBXBuildFile; fileRef = 1392771316881AD6005B80BA /* unity default resources */; };
+		1392775716881AD7005B80BA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771416881AD6005B80BA /* Default-568h@2x.png */; };
+		1392775816881AD7005B80BA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771416881AD6005B80BA /* Default-568h@2x.png */; };
+		1392775916881AD7005B80BA /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771516881AD6005B80BA /* Default-Landscape.png */; };
+		1392775A16881AD7005B80BA /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771516881AD6005B80BA /* Default-Landscape.png */; };
+		1392775B16881AD7005B80BA /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771616881AD6005B80BA /* Default-Landscape@2x.png */; };
+		1392775C16881AD7005B80BA /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771616881AD6005B80BA /* Default-Landscape@2x.png */; };
+		1392775D16881AD7005B80BA /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771716881AD6005B80BA /* Default-Portrait.png */; };
+		1392775E16881AD7005B80BA /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771716881AD6005B80BA /* Default-Portrait.png */; };
+		1392775F16881AD7005B80BA /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771816881AD6005B80BA /* Default-Portrait@2x.png */; };
+		1392776016881AD7005B80BA /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771816881AD6005B80BA /* Default-Portrait@2x.png */; };
+		1392776116881AD7005B80BA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771916881AD6005B80BA /* Default.png */; };
+		1392776216881AD7005B80BA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771916881AD6005B80BA /* Default.png */; };
+		1392776316881AD7005B80BA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771A16881AD6005B80BA /* Default@2x.png */; };
+		1392776416881AD7005B80BA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771A16881AD6005B80BA /* Default@2x.png */; };
+		1392776516881AD7005B80BA /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771B16881AD6005B80BA /* Icon-144.png */; };
+		1392776616881AD7005B80BA /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771B16881AD6005B80BA /* Icon-144.png */; };
+		1392776716881AD7005B80BA /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771C16881AD6005B80BA /* Icon-72.png */; };
+		1392776816881AD7005B80BA /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771C16881AD6005B80BA /* Icon-72.png */; };
+		1392776916881AD7005B80BA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771D16881AD6005B80BA /* Icon.png */; };
+		1392776A16881AD7005B80BA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771D16881AD6005B80BA /* Icon.png */; };
+		1392776B16881AD7005B80BA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771E16881AD6005B80BA /* Icon@2x.png */; };
+		1392776C16881AD7005B80BA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1392771E16881AD6005B80BA /* Icon@2x.png */; };
+		1392776D16881AD7005B80BA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1392771F16881AD6005B80BA /* Info.plist */; };
+		1392776E16881AD7005B80BA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1392771F16881AD6005B80BA /* Info.plist */; };
+		1392776F16881AD7005B80BA /* Assembly-CSharp.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772116881AD6005B80BA /* Assembly-CSharp.dll.s */; };
+		1392777016881AD7005B80BA /* Assembly-CSharp.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772116881AD6005B80BA /* Assembly-CSharp.dll.s */; };
+		1392777116881AD7005B80BA /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1392772216881AD6005B80BA /* libiPhone-lib.a */; };
+		1392777216881AD7005B80BA /* libiPhone-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1392772216881AD6005B80BA /* libiPhone-lib.a */; };
+		1392777316881AD7005B80BA /* mscorlib.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772316881AD6005B80BA /* mscorlib.dll.s */; };
+		1392777416881AD7005B80BA /* mscorlib.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772316881AD6005B80BA /* mscorlib.dll.s */; };
+		1392777516881AD7005B80BA /* RegisterMonoModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1392772416881AD6005B80BA /* RegisterMonoModules.cpp */; };
+		1392777616881AD7005B80BA /* RegisterMonoModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1392772416881AD6005B80BA /* RegisterMonoModules.cpp */; };
+		1392777716881AD7005B80BA /* UnityEngine.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772616881AD6005B80BA /* UnityEngine.dll.s */; };
+		1392777816881AD7005B80BA /* UnityEngine.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772616881AD6005B80BA /* UnityEngine.dll.s */; };
 		139A520C1685FA1100A4A48E /* SamplePinViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 139A520A1685FA1100A4A48E /* SamplePinViewControler.m */; };
 		139A520D1685FA1100A4A48E /* SamplePinViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 139A520A1685FA1100A4A48E /* SamplePinViewControler.m */; };
 		139A520E1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */; };
@@ -74,6 +148,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1392777A16881AD7005B80BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1392772716881AD6005B80BA /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "Unity-iPhone";
+		};
 		13FFEE711653694C001D94AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13FFEE421653694C001D94AB /* Project object */;
@@ -84,6 +165,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		139276ED16881AD6005B80BA /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		139276EE16881AD6005B80BA /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
+		139276EF16881AD6005B80BA /* iPhone_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Common.h; sourceTree = "<group>"; };
+		139276F016881AD6005B80BA /* iPhone_GlesSupport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iPhone_GlesSupport.cpp; sourceTree = "<group>"; };
+		139276F116881AD6005B80BA /* iPhone_GlesSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_GlesSupport.h; sourceTree = "<group>"; };
+		139276F216881AD6005B80BA /* iPhone_OrientationSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_OrientationSupport.h; sourceTree = "<group>"; };
+		139276F316881AD6005B80BA /* iPhone_OrientationSupport.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPhone_OrientationSupport.mm; sourceTree = "<group>"; };
+		139276F416881AD6005B80BA /* iPhone_Profiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iPhone_Profiler.cpp; sourceTree = "<group>"; };
+		139276F516881AD6005B80BA /* iPhone_Profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Profiler.h; sourceTree = "<group>"; };
+		139276F616881AD6005B80BA /* iPhone_Sensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Sensors.h; sourceTree = "<group>"; };
+		139276F716881AD6005B80BA /* iPhone_Sensors.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPhone_Sensors.mm; sourceTree = "<group>"; };
+		139276F816881AD6005B80BA /* iPhone_target2AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_target2AppDelegate.h; sourceTree = "<group>"; };
+		139276F916881AD6005B80BA /* iPhone_target2AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhone_target2AppDelegate.m; sourceTree = "<group>"; };
+		139276FA16881AD6005B80BA /* iPhone_target_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_target_Prefix.pch; sourceTree = "<group>"; };
+		139276FB16881AD6005B80BA /* iPhone_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_View.h; sourceTree = "<group>"; };
+		139276FC16881AD6005B80BA /* iPhone_View.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iPhone_View.mm; sourceTree = "<group>"; };
+		139276FE16881AD6005B80BA /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		139276FF16881AD6005B80BA /* RegisterClasses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegisterClasses.cpp; sourceTree = "<group>"; };
+		1392770016881AD6005B80BA /* RegisterClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterClasses.h; sourceTree = "<group>"; };
+		1392770216881AD6005B80BA /* ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator.h; sourceTree = "<group>"; };
+		1392770316881AD6005B80BA /* ActivityIndicator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ActivityIndicator.mm; sourceTree = "<group>"; };
+		1392770416881AD6005B80BA /* SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreen.h; sourceTree = "<group>"; };
+		1392770516881AD6005B80BA /* SplashScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SplashScreen.mm; sourceTree = "<group>"; };
+		1392770616881AD6005B80BA /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		1392770716881AD6005B80BA /* VideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoViewController.mm; sourceTree = "<group>"; };
+		1392770916881AD6005B80BA /* mainData */ = {isa = PBXFileReference; lastKnownFileType = file; path = mainData; sourceTree = "<group>"; };
+		1392770B16881AD6005B80BA /* Assembly-CSharp.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assembly-CSharp.dll"; sourceTree = "<group>"; };
+		1392770E16881AD6005B80BA /* machine.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = machine.config; sourceTree = "<group>"; };
+		1392770F16881AD6005B80BA /* mscorlib.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = mscorlib.dll; sourceTree = "<group>"; };
+		1392771016881AD6005B80BA /* UnityEngine.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnityEngine.dll; sourceTree = "<group>"; };
+		1392771116881AD6005B80BA /* PlayerConnectionConfigFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlayerConnectionConfigFile; sourceTree = "<group>"; };
+		1392771216881AD6005B80BA /* sharedassets0.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets0.assets; sourceTree = "<group>"; };
+		1392771316881AD6005B80BA /* unity default resources */ = {isa = PBXFileReference; lastKnownFileType = file; path = "unity default resources"; sourceTree = "<group>"; };
+		1392771416881AD6005B80BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1392771516881AD6005B80BA /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		1392771616881AD6005B80BA /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		1392771716881AD6005B80BA /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		1392771816881AD6005B80BA /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		1392771916881AD6005B80BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1392771A16881AD6005B80BA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1392771B16881AD6005B80BA /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		1392771C16881AD6005B80BA /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		1392771D16881AD6005B80BA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1392771E16881AD6005B80BA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1392771F16881AD6005B80BA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1392772116881AD6005B80BA /* Assembly-CSharp.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "Assembly-CSharp.dll.s"; sourceTree = "<group>"; };
+		1392772216881AD6005B80BA /* libiPhone-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libiPhone-lib.a"; sourceTree = "<group>"; };
+		1392772316881AD6005B80BA /* mscorlib.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = mscorlib.dll.s; sourceTree = "<group>"; };
+		1392772416881AD6005B80BA /* RegisterMonoModules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegisterMonoModules.cpp; sourceTree = "<group>"; };
+		1392772516881AD6005B80BA /* RegisterMonoModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMonoModules.h; sourceTree = "<group>"; };
+		1392772616881AD6005B80BA /* UnityEngine.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = UnityEngine.dll.s; sourceTree = "<group>"; };
+		1392772716881AD6005B80BA /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Unity-iPhone.xcodeproj"; sourceTree = "<group>"; };
 		139A52091685FA1100A4A48E /* SamplePinViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SamplePinViewControler.h; path = SamplePinViewControl/SamplePinViewControler.h; sourceTree = "<group>"; };
 		139A520A1685FA1100A4A48E /* SamplePinViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplePinViewControler.m; path = SamplePinViewControl/SamplePinViewControler.m; sourceTree = "<group>"; };
 		139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SamplePinViewControler.xib; path = SamplePinViewControl/SamplePinViewControler.xib; sourceTree = "<group>"; };
@@ -159,6 +292,7 @@
 				139EA301166C9366001A29F0 /* CoreGraphics.framework in Frameworks */,
 				139EA303166C9366001A29F0 /* CoreMotion.framework in Frameworks */,
 				139EA305166C9366001A29F0 /* GameKit.framework in Frameworks */,
+				1392777116881AD7005B80BA /* libiPhone-lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,12 +320,160 @@
 				139EA302166C9366001A29F0 /* CoreGraphics.framework in Frameworks */,
 				139EA304166C9366001A29F0 /* CoreMotion.framework in Frameworks */,
 				139EA306166C9366001A29F0 /* GameKit.framework in Frameworks */,
+				1392777216881AD7005B80BA /* libiPhone-lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139276E816881AD6005B80BA /* iOSUnityApp */ = {
+			isa = PBXGroup;
+			children = (
+				139276E916881AD6005B80BA /* build */,
+				139276EC16881AD6005B80BA /* Classes */,
+				1392770816881AD6005B80BA /* Data */,
+				1392771416881AD6005B80BA /* Default-568h@2x.png */,
+				1392771516881AD6005B80BA /* Default-Landscape.png */,
+				1392771616881AD6005B80BA /* Default-Landscape@2x.png */,
+				1392771716881AD6005B80BA /* Default-Portrait.png */,
+				1392771816881AD6005B80BA /* Default-Portrait@2x.png */,
+				1392771916881AD6005B80BA /* Default.png */,
+				1392771A16881AD6005B80BA /* Default@2x.png */,
+				1392771B16881AD6005B80BA /* Icon-144.png */,
+				1392771C16881AD6005B80BA /* Icon-72.png */,
+				1392771D16881AD6005B80BA /* Icon.png */,
+				1392771E16881AD6005B80BA /* Icon@2x.png */,
+				1392771F16881AD6005B80BA /* Info.plist */,
+				1392772016881AD6005B80BA /* Libraries */,
+				1392772716881AD6005B80BA /* Unity-iPhone.xcodeproj */,
+			);
+			path = iOSUnityApp;
+			sourceTree = "<group>";
+		};
+		139276E916881AD6005B80BA /* build */ = {
+			isa = PBXGroup;
+			children = (
+				139276EA16881AD6005B80BA /* Unity-iPhone.build */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		139276EA16881AD6005B80BA /* Unity-iPhone.build */ = {
+			isa = PBXGroup;
+			children = (
+				139276EB16881AD6005B80BA /* Release-iphoneos */,
+			);
+			path = "Unity-iPhone.build";
+			sourceTree = "<group>";
+		};
+		139276EB16881AD6005B80BA /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		139276EC16881AD6005B80BA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				139276ED16881AD6005B80BA /* AppController.h */,
+				139276EE16881AD6005B80BA /* AppController.mm */,
+				139276EF16881AD6005B80BA /* iPhone_Common.h */,
+				139276F016881AD6005B80BA /* iPhone_GlesSupport.cpp */,
+				139276F116881AD6005B80BA /* iPhone_GlesSupport.h */,
+				139276F216881AD6005B80BA /* iPhone_OrientationSupport.h */,
+				139276F316881AD6005B80BA /* iPhone_OrientationSupport.mm */,
+				139276F416881AD6005B80BA /* iPhone_Profiler.cpp */,
+				139276F516881AD6005B80BA /* iPhone_Profiler.h */,
+				139276F616881AD6005B80BA /* iPhone_Sensors.h */,
+				139276F716881AD6005B80BA /* iPhone_Sensors.mm */,
+				139276F816881AD6005B80BA /* iPhone_target2AppDelegate.h */,
+				139276F916881AD6005B80BA /* iPhone_target2AppDelegate.m */,
+				139276FA16881AD6005B80BA /* iPhone_target_Prefix.pch */,
+				139276FB16881AD6005B80BA /* iPhone_View.h */,
+				139276FC16881AD6005B80BA /* iPhone_View.mm */,
+				139276FE16881AD6005B80BA /* MainWindow.xib */,
+				139276FF16881AD6005B80BA /* RegisterClasses.cpp */,
+				1392770016881AD6005B80BA /* RegisterClasses.h */,
+				1392770116881AD6005B80BA /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1392770116881AD6005B80BA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1392770216881AD6005B80BA /* ActivityIndicator.h */,
+				1392770316881AD6005B80BA /* ActivityIndicator.mm */,
+				1392770416881AD6005B80BA /* SplashScreen.h */,
+				1392770516881AD6005B80BA /* SplashScreen.mm */,
+				1392770616881AD6005B80BA /* VideoViewController.h */,
+				1392770716881AD6005B80BA /* VideoViewController.mm */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1392770816881AD6005B80BA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1392770916881AD6005B80BA /* mainData */,
+				1392770A16881AD6005B80BA /* Managed */,
+				1392771116881AD6005B80BA /* PlayerConnectionConfigFile */,
+				1392771216881AD6005B80BA /* sharedassets0.assets */,
+				1392771316881AD6005B80BA /* unity default resources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1392770A16881AD6005B80BA /* Managed */ = {
+			isa = PBXGroup;
+			children = (
+				1392770B16881AD6005B80BA /* Assembly-CSharp.dll */,
+				1392770C16881AD6005B80BA /* mono */,
+				1392770F16881AD6005B80BA /* mscorlib.dll */,
+				1392771016881AD6005B80BA /* UnityEngine.dll */,
+			);
+			path = Managed;
+			sourceTree = "<group>";
+		};
+		1392770C16881AD6005B80BA /* mono */ = {
+			isa = PBXGroup;
+			children = (
+				1392770D16881AD6005B80BA /* 2.0 */,
+			);
+			path = mono;
+			sourceTree = "<group>";
+		};
+		1392770D16881AD6005B80BA /* 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1392770E16881AD6005B80BA /* machine.config */,
+			);
+			path = 2.0;
+			sourceTree = "<group>";
+		};
+		1392772016881AD6005B80BA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1392772116881AD6005B80BA /* Assembly-CSharp.dll.s */,
+				1392772216881AD6005B80BA /* libiPhone-lib.a */,
+				1392772316881AD6005B80BA /* mscorlib.dll.s */,
+				1392772416881AD6005B80BA /* RegisterMonoModules.cpp */,
+				1392772516881AD6005B80BA /* RegisterMonoModules.h */,
+				1392772616881AD6005B80BA /* UnityEngine.dll.s */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		1392772816881AD6005B80BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1392777B16881AD7005B80BA /* PanzerStrike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		139A52071685F9EE00A4A48E /* SamplePinViewControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +517,7 @@
 		13FFEE401653694C001D94AB = {
 			isa = PBXGroup;
 			children = (
+				139276E816881AD6005B80BA /* iOSUnityApp */,
 				139EA219166C91AC001A29F0 /* MessengerSystem */,
 				139EA0E0166C6928001A29F0 /* KSUnityBoot */,
 				13FFEE551653694C001D94AB /* UnityConnector */,
@@ -386,6 +669,12 @@
 			mainGroup = 13FFEE401653694C001D94AB;
 			productRefGroup = 13FFEE4C1653694C001D94AB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1392772816881AD6005B80BA /* Products */;
+					ProjectRef = 1392772716881AD6005B80BA /* Unity-iPhone.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13FFEE4A1653694C001D94AB /* UnityConnector */,
@@ -393,6 +682,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1392777B16881AD7005B80BA /* PanzerStrike.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PanzerStrike.app;
+			remoteRef = 1392777A16881AD7005B80BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13FFEE491653694C001D94AB /* Resources */ = {
@@ -406,6 +705,27 @@
 				139EA0F4166C6961001A29F0 /* SampleTitleViewController.xib in Resources */,
 				13D3C4A71685D50700E1118B /* UnityConnector-Info.plist in Resources */,
 				139A520E1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */,
+				1392773D16881AD6005B80BA /* MainWindow.xib in Resources */,
+				1392774716881AD6005B80BA /* mainData in Resources */,
+				1392774916881AD7005B80BA /* Assembly-CSharp.dll in Resources */,
+				1392774B16881AD7005B80BA /* machine.config in Resources */,
+				1392774D16881AD7005B80BA /* mscorlib.dll in Resources */,
+				1392774F16881AD7005B80BA /* UnityEngine.dll in Resources */,
+				1392775116881AD7005B80BA /* PlayerConnectionConfigFile in Resources */,
+				1392775316881AD7005B80BA /* sharedassets0.assets in Resources */,
+				1392775516881AD7005B80BA /* unity default resources in Resources */,
+				1392775716881AD7005B80BA /* Default-568h@2x.png in Resources */,
+				1392775916881AD7005B80BA /* Default-Landscape.png in Resources */,
+				1392775B16881AD7005B80BA /* Default-Landscape@2x.png in Resources */,
+				1392775D16881AD7005B80BA /* Default-Portrait.png in Resources */,
+				1392775F16881AD7005B80BA /* Default-Portrait@2x.png in Resources */,
+				1392776116881AD7005B80BA /* Default.png in Resources */,
+				1392776316881AD7005B80BA /* Default@2x.png in Resources */,
+				1392776516881AD7005B80BA /* Icon-144.png in Resources */,
+				1392776716881AD7005B80BA /* Icon-72.png in Resources */,
+				1392776916881AD7005B80BA /* Icon.png in Resources */,
+				1392776B16881AD7005B80BA /* Icon@2x.png in Resources */,
+				1392776D16881AD7005B80BA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +737,27 @@
 				139EA0F5166C6961001A29F0 /* SampleTitleViewController.xib in Resources */,
 				13D3C4A81685D50700E1118B /* UnityConnector-Info.plist in Resources */,
 				139A520F1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */,
+				1392773E16881AD6005B80BA /* MainWindow.xib in Resources */,
+				1392774816881AD6005B80BA /* mainData in Resources */,
+				1392774A16881AD7005B80BA /* Assembly-CSharp.dll in Resources */,
+				1392774C16881AD7005B80BA /* machine.config in Resources */,
+				1392774E16881AD7005B80BA /* mscorlib.dll in Resources */,
+				1392775016881AD7005B80BA /* UnityEngine.dll in Resources */,
+				1392775216881AD7005B80BA /* PlayerConnectionConfigFile in Resources */,
+				1392775416881AD7005B80BA /* sharedassets0.assets in Resources */,
+				1392775616881AD7005B80BA /* unity default resources in Resources */,
+				1392775816881AD7005B80BA /* Default-568h@2x.png in Resources */,
+				1392775A16881AD7005B80BA /* Default-Landscape.png in Resources */,
+				1392775C16881AD7005B80BA /* Default-Landscape@2x.png in Resources */,
+				1392775E16881AD7005B80BA /* Default-Portrait.png in Resources */,
+				1392776016881AD7005B80BA /* Default-Portrait@2x.png in Resources */,
+				1392776216881AD7005B80BA /* Default.png in Resources */,
+				1392776416881AD7005B80BA /* Default@2x.png in Resources */,
+				1392776616881AD7005B80BA /* Icon-144.png in Resources */,
+				1392776816881AD7005B80BA /* Icon-72.png in Resources */,
+				1392776A16881AD7005B80BA /* Icon.png in Resources */,
+				1392776C16881AD7005B80BA /* Icon@2x.png in Resources */,
+				1392776E16881AD7005B80BA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +804,21 @@
 				139EA21E166C91AC001A29F0 /* MessengerIDGenerator.m in Sources */,
 				139EA220166C91AC001A29F0 /* MessengerSystem.m in Sources */,
 				139A520C1685FA1100A4A48E /* SamplePinViewControler.m in Sources */,
+				1392772D16881AD6005B80BA /* AppController.mm in Sources */,
+				1392772F16881AD6005B80BA /* iPhone_GlesSupport.cpp in Sources */,
+				1392773116881AD6005B80BA /* iPhone_OrientationSupport.mm in Sources */,
+				1392773316881AD6005B80BA /* iPhone_Profiler.cpp in Sources */,
+				1392773516881AD6005B80BA /* iPhone_Sensors.mm in Sources */,
+				1392773716881AD6005B80BA /* iPhone_target2AppDelegate.m in Sources */,
+				1392773916881AD6005B80BA /* iPhone_View.mm in Sources */,
+				1392773F16881AD6005B80BA /* RegisterClasses.cpp in Sources */,
+				1392774116881AD6005B80BA /* ActivityIndicator.mm in Sources */,
+				1392774316881AD6005B80BA /* SplashScreen.mm in Sources */,
+				1392774516881AD6005B80BA /* VideoViewController.mm in Sources */,
+				1392776F16881AD7005B80BA /* Assembly-CSharp.dll.s in Sources */,
+				1392777316881AD7005B80BA /* mscorlib.dll.s in Sources */,
+				1392777516881AD7005B80BA /* RegisterMonoModules.cpp in Sources */,
+				1392777716881AD7005B80BA /* UnityEngine.dll.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +832,21 @@
 				139EA21F166C91AC001A29F0 /* MessengerIDGenerator.m in Sources */,
 				139EA221166C91AC001A29F0 /* MessengerSystem.m in Sources */,
 				139A520D1685FA1100A4A48E /* SamplePinViewControler.m in Sources */,
+				1392772E16881AD6005B80BA /* AppController.mm in Sources */,
+				1392773016881AD6005B80BA /* iPhone_GlesSupport.cpp in Sources */,
+				1392773216881AD6005B80BA /* iPhone_OrientationSupport.mm in Sources */,
+				1392773416881AD6005B80BA /* iPhone_Profiler.cpp in Sources */,
+				1392773616881AD6005B80BA /* iPhone_Sensors.mm in Sources */,
+				1392773816881AD6005B80BA /* iPhone_target2AppDelegate.m in Sources */,
+				1392773A16881AD6005B80BA /* iPhone_View.mm in Sources */,
+				1392774016881AD6005B80BA /* RegisterClasses.cpp in Sources */,
+				1392774216881AD6005B80BA /* ActivityIndicator.mm in Sources */,
+				1392774416881AD6005B80BA /* SplashScreen.mm in Sources */,
+				1392774616881AD6005B80BA /* VideoViewController.mm in Sources */,
+				1392777016881AD7005B80BA /* Assembly-CSharp.dll.s in Sources */,
+				1392777416881AD7005B80BA /* mscorlib.dll.s in Sources */,
+				1392777616881AD7005B80BA /* RegisterMonoModules.cpp in Sources */,
+				1392777816881AD7005B80BA /* UnityEngine.dll.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

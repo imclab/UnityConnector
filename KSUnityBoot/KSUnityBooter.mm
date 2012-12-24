@@ -27,6 +27,11 @@ AppController * unityApp;
     }
     return self;
 }
+- (void) info:(NSNotification * )notif {
+	//remove observe
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+	[messenger callParent:KS_UNITYBOOTER_EXEC_VIEWCANBEAPPEND, nil];
+}
 
 - (void) receiver:(NSNotification * )notif {
     NSString * exec = [messenger getExecFromNotification:notif];
@@ -75,13 +80,25 @@ AppController * unityApp;
         NSAssert([dict valueForKey:@"application"],@"application required");
         NSAssert([dict valueForKey:@"launchOptions"], @"launchOptions required");
         
+		
         UIApplication * application = [dict valueForKey:@"application"];
         NSDictionary * launchOptions = [dict valueForKey:@"launchOptions"];
-        
+		
+		/*
+		 set notification-hook when the Unity-App's setup over.
+		 */
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(info:) name:KS_UNITYBOOTER_DEFINE_OBSERVE_WHENUNITYBOOTED object:nil];
+		
+		
         RegisterMonoModules();
         
         unityApp = [[AppController alloc]init];
         [unityApp application:application didFinishLaunchingWithOptions:launchOptions];
+
+		//get the Unity-Window
+		NSAssert(1 < [[application windows] count], @"there is no additional Unity-Window, maybe the Unity's spec had been changed.");
+		
+		m_unityWindow = [[application windows] objectAtIndex:1];
     }
     
     if ([exec isEqualToString:KS_UNITYBOOTER_EXEC_DIDBECOMEACTIVE]) {
@@ -148,11 +165,26 @@ AppController * unityApp;
     /*
      rotation
      */
-    if ([exec isEqualToString:KS_UNITYBOOTER_SUPPORTEDINTERFACEORIENTATIONFORWINDOW]) {
+    if ([exec isEqualToString:KS_UNITYBOOTER_EXEC_SUPPORTEDINTERFACEORIENTATIONFORWINDOW]) {
         NSAssert([dict valueForKey:@"application"],@"application required");
         NSAssert([dict valueForKey:@"window"],@"window required");
         [unityApp application:[dict valueForKey:@"application"] supportedInterfaceOrientationsForWindow:[dict valueForKey:@"window"]];
     }
+	
+	
+	/*
+	 adding:view control
+	 */
+	if ([exec isEqualToString:KS_UNITYBOOTER_EXEC_ADD_VIEW]) {
+		NSAssert([dict valueForKey:@"view"], @"view required");
+		
+		//add subview to Unity-Window
+		[m_unityWindow addSubview:[dict valueForKey:@"view"]];
+	}
+	
+	if ([exec isEqualToString:KS_UNITYBOOTER_EXEC_REMOVE_ALL_VIEW]) {
+		
+	}
 }
 
 - (void) dealloc {
