@@ -11,6 +11,8 @@
 
 #import "SampleTitleViewController.h"
 #import "SamplePinViewControler.h"
+#import "BaseViewController.h"
+
 
 @implementation AppDelegate
 
@@ -70,8 +72,13 @@ void uncaughtExceptionHandler(NSException *exception) {
 		 generate pinView(back button inside.)
 		 */
 		SamplePinViewControler * samplePinViewCont = [[SamplePinViewControler alloc]init];
+		
+		BaseViewController * baseView = [[BaseViewController alloc]init];
+		
+		
+		[baseView.view addSubview:samplePinViewCont.view];
 		[messenger call:KS_UNITYBOOTER withExec:KS_UNITYBOOTER_EXEC_ADD_VIEW,
-		 [messenger tag:@"view" val:samplePinViewCont.view],
+		 [messenger tag:@"view" val:baseView.view],
 		 nil];
 	}
 

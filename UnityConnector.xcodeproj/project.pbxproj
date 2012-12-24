@@ -81,6 +81,10 @@
 		1392777616881AD7005B80BA /* RegisterMonoModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1392772416881AD6005B80BA /* RegisterMonoModules.cpp */; };
 		1392777716881AD7005B80BA /* UnityEngine.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772616881AD6005B80BA /* UnityEngine.dll.s */; };
 		1392777816881AD7005B80BA /* UnityEngine.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1392772616881AD6005B80BA /* UnityEngine.dll.s */; };
+		139277801688C8D3005B80BA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1392777E1688C8D3005B80BA /* BaseViewController.m */; };
+		139277811688C8D3005B80BA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1392777E1688C8D3005B80BA /* BaseViewController.m */; };
+		139277821688C8D3005B80BA /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1392777F1688C8D3005B80BA /* BaseViewController.xib */; };
+		139277831688C8D3005B80BA /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1392777F1688C8D3005B80BA /* BaseViewController.xib */; };
 		139A520C1685FA1100A4A48E /* SamplePinViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 139A520A1685FA1100A4A48E /* SamplePinViewControler.m */; };
 		139A520D1685FA1100A4A48E /* SamplePinViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 139A520A1685FA1100A4A48E /* SamplePinViewControler.m */; };
 		139A520E1685FA1100A4A48E /* SamplePinViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */; };
@@ -217,6 +221,9 @@
 		1392772516881AD6005B80BA /* RegisterMonoModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMonoModules.h; sourceTree = "<group>"; };
 		1392772616881AD6005B80BA /* UnityEngine.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = UnityEngine.dll.s; sourceTree = "<group>"; };
 		1392772716881AD6005B80BA /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Unity-iPhone.xcodeproj"; sourceTree = "<group>"; };
+		1392777D1688C8D3005B80BA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1392777E1688C8D3005B80BA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1392777F1688C8D3005B80BA /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		139A52091685FA1100A4A48E /* SamplePinViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SamplePinViewControler.h; path = SamplePinViewControl/SamplePinViewControler.h; sourceTree = "<group>"; };
 		139A520A1685FA1100A4A48E /* SamplePinViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SamplePinViewControler.m; path = SamplePinViewControl/SamplePinViewControler.m; sourceTree = "<group>"; };
 		139A520B1685FA1100A4A48E /* SamplePinViewControler.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SamplePinViewControler.xib; path = SamplePinViewControl/SamplePinViewControler.xib; sourceTree = "<group>"; };
@@ -573,6 +580,9 @@
 				13FFEE5E1653694C001D94AB /* AppDelegate.h */,
 				13FFEE5F1653694C001D94AB /* AppDelegate.m */,
 				13FFEE561653694C001D94AB /* Supporting Files */,
+				1392777D1688C8D3005B80BA /* BaseViewController.h */,
+				1392777E1688C8D3005B80BA /* BaseViewController.m */,
+				1392777F1688C8D3005B80BA /* BaseViewController.xib */,
 			);
 			path = UnityConnector;
 			sourceTree = "<group>";
@@ -726,6 +736,7 @@
 				1392776916881AD7005B80BA /* Icon.png in Resources */,
 				1392776B16881AD7005B80BA /* Icon@2x.png in Resources */,
 				1392776D16881AD7005B80BA /* Info.plist in Resources */,
+				139277821688C8D3005B80BA /* BaseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +769,7 @@
 				1392776A16881AD7005B80BA /* Icon.png in Resources */,
 				1392776C16881AD7005B80BA /* Icon@2x.png in Resources */,
 				1392776E16881AD7005B80BA /* Info.plist in Resources */,
+				139277831688C8D3005B80BA /* BaseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +831,7 @@
 				1392777316881AD7005B80BA /* mscorlib.dll.s in Sources */,
 				1392777516881AD7005B80BA /* RegisterMonoModules.cpp in Sources */,
 				1392777716881AD7005B80BA /* UnityEngine.dll.s in Sources */,
+				139277801688C8D3005B80BA /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +860,7 @@
 				1392777416881AD7005B80BA /* mscorlib.dll.s in Sources */,
 				1392777616881AD7005B80BA /* RegisterMonoModules.cpp in Sources */,
 				1392777816881AD7005B80BA /* UnityEngine.dll.s in Sources */,
+				139277811688C8D3005B80BA /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
