@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MessengerSystem.h"
+#import "KSMessenger.h"
 
 #import "SampleTitleViewController.h"
 
@@ -18,7 +18,8 @@
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-    MessengerSystem * messenger;
+	KSMessenger * messenger;
+	
     UIApplication * m_application;
     NSDictionary * m_launchOptions;
 	

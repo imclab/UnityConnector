@@ -13,14 +13,10 @@
 #import "SamplePinViewControler.h"
 #import "BaseViewController.h"
 
+#import "KSMessenger.h"
 
 @implementation AppDelegate
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
 
 void uncaughtExceptionHandler(NSException *exception) {
     NSLog(@"CRASH: %@", exception);
@@ -32,14 +28,15 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     
     m_application = application;
     m_launchOptions = [[NSDictionary alloc]init];
     
     
-    messenger = [[MessengerSystem alloc] initWithBodyID:self withSelector:@selector(receiver:) withName:CONNECTOR_MASTER];
+    messenger = [[KSMessenger alloc] initWithBodyID:self withSelector:@selector(receiver:) withName:CONNECTOR_MASTER];
+	
     KSUnityConnector * unityConnect = [[KSUnityConnector alloc]initKSUnityConnectorWithMasterName:CONNECTOR_MASTER];
     
     sampleVCont = [[SampleTitleViewController alloc]initSampleTitleViewControllerWithMasterName:CONNECTOR_MASTER];
@@ -53,35 +50,57 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 
 - (void)receiver:(NSNotification * )notif {
-    NSString * exec = [messenger getExecFromNotification:notif];
-    NSDictionary * dict = [messenger getTagValueDictionaryFromNotification:notif];
-    
-    if ([exec isEqualToString:SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED]) {
-		
-		/*
-		 ignite Unity
-		 */
-        [messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_INITIALIZE,
-         [messenger tag:@"application" val:m_application],
-         [messenger tag:@"launchOptions" val:m_launchOptions],
-         nil];
+    NSDictionary * dict = [messenger tagValueDictionaryFromNotification:notif];
+	
+//	[messenger adoptSelectorsAndExecs,
+//	 @selector(method:), SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED,
+// 	 @selector(method:), SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED,
+//	 nil];
+	
+	switch ([messenger execFrom:SAMPLE_TITLEVIEWCONT viaNotification:notif]) {
+		case SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED:{
+			/*
+			 ignite Unity
+			 */
+			[messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_INITIALIZE,
+			 [messenger tag:@"application" val:m_application],
+			 [messenger tag:@"launchOptions" val:m_launchOptions],
+			 nil];
+			break;
+		}	
+		case NONE:{
+			NSLog(@"不明なexec %@", notif);
+			break;
+		}
+			
+		default:
+			NSAssert(false, @"not match1");
+			break;
 	}
 	
-	if ([exec isEqualToString:KS_UNITYCONNECTOR_EXEC_VIEWCANBEAPPEND]) {
-		/*
-		 generate pinView(back button inside.)
-		 */
-		SamplePinViewControler * samplePinViewCont = [[SamplePinViewControler alloc]init];
-		
-		BaseViewController * baseView = [[BaseViewController alloc]init];
-		
-		
-		[baseView.view addSubview:samplePinViewCont.view];
-		[messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_ADD_VIEW,
-		 [messenger tag:@"view" val:baseView.view],
-		 nil];
+	switch ([messenger execFrom:KS_UNITYCONNECTOR viaNotification:notif]) {
+		case KS_UNITYCONNECTOR_EXEC_VIEWCANBEAPPEND:{
+			/*
+			 generate pinView(back button inside.)
+			 */
+			SamplePinViewControler * samplePinViewCont = [[SamplePinViewControler alloc]init];
+			
+			BaseViewController * baseView = [[BaseViewController alloc]init];
+			
+			[baseView.view addSubview:samplePinViewCont.view];
+			[messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_ADD_VIEW,
+			 [messenger tag:@"view" val:baseView.view],
+			 nil];
+			break;
+		}
+		case NONE:{
+			NSLog(@"???");
+			break;
+		}
+		default:
+			NSAssert(false, @"not match2	%d", [messenger execFrom:KS_UNITYCONNECTOR viaNotification:notif]);
+			break;
 	}
-
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

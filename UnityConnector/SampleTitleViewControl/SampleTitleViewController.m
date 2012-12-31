@@ -7,28 +7,38 @@
 //
 
 #import "SampleTitleViewController.h"
+#import "KSMessenger.h"
 
 @interface SampleTitleViewController ()
 
 @end
 
 @implementation SampleTitleViewController
+
+KSMessenger * messenger;
+
 - (id) initSampleTitleViewControllerWithMasterName:(NSString * )masterName {
     if (self = [super init]) {
-        messenger = [[MessengerSystem alloc]initWithBodyID:self withSelector:@selector(receiver:) withName:SAMPLE_TITLEVIEWCONT];
-        [messenger inputParent:masterName];
+        messenger = [[KSMessenger alloc]initWithBodyID:self withSelector:@selector(receiver:) withName:SAMPLE_TITLEVIEWCONT];
+        [messenger connectParent:masterName];
     }
     return self;
 }
 
 - (void) receiver:(NSNotification * )notif {
-	NSString * exec = [messenger getExecFromNotification:notif];
-	NSDictionary * dict = [messenger getTagValueDictionaryFromNotification:notif];
+	NSDictionary * dict = [messenger tagValueDictionaryFromNotification:notif];
 	
-	if ([exec isEqualToString:SAMPLE_TITLEVIEWCONT_EXEC_GET_VIEW]) {
-		[messenger callback:notif,
-		 [messenger tag:@"view" val:self.view],
-		 nil];
+	switch ([messenger execFrom:[messenger myParentName] viaNotification:notif]) {
+		case SAMPLE_TITLEVIEWCONT_EXEC_GET_VIEW:{
+			[messenger callback:notif,
+			 [messenger tag:@"view" val:self.view],
+			 nil];
+
+			break;
+		}
+			
+		default:
+			break;
 	}
 }
 

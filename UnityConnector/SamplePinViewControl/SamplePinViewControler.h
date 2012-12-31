@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MessengerSystem.h"
 
 #define SAMPLE_PINVIEWCONT	(@"SAMPLE_PINVIEWCONT")
 
-@interface SamplePinViewControler : UIViewController {
-	MessengerSystem * messenger;
-}
+@interface SamplePinViewControler : UIViewController
 
 - (id) initSamplePinViewControlerWithMasterName:(NSString * )masterName;
 - (IBAction)tapped:(id)sender;

@@ -7,16 +7,20 @@
 //
 
 #import "SamplePinViewControler.h"
+#import "KSMessenger.h"
 
 @interface SamplePinViewControler ()
 
 @end
 
 @implementation SamplePinViewControler
+KSMessenger * messenger;
+
+
 - (id) initSamplePinViewControlerWithMasterName:(NSString * )masterName {
 	if (self = [super init]) {
-		messenger = [[MessengerSystem alloc]initWithBodyID:self withSelector:@selector(receiver:) withName:SAMPLE_PINVIEWCONT];
-		[messenger inputParent:masterName];
+		messenger = [[KSMessenger alloc]initWithBodyID:self withSelector:@selector(receiver:) withName:SAMPLE_PINVIEWCONT];
+		[messenger connectParent:masterName];
 	}
 	return self;
 }

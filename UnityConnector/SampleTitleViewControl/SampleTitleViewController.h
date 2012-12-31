@@ -7,17 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MessengerSystem.h"
 
-#define SAMPLE_TITLEVIEWCONT   (@"SAMPLE_TITLEVIEWCONT")
-#define SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED   (@"SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED")
+#define SAMPLE_TITLEVIEWCONT	(@"SAMPLE_TITLEVIEWCONT")
 
-#define SAMPLE_TITLEVIEWCONT_EXEC_GET_VIEW	(@"SAMPLE_TITLEVIEWCONT_EXEC_GET_VIEW")
+typedef enum{
+	SAMPLE_TITLEVIEWCONT_EXEC_UNITY_ON_TAPPED,
+	SAMPLE_TITLEVIEWCONT_EXEC_GET_VIEW
+} SampleTitleViewControllerEnum;
 
 
-@interface SampleTitleViewController : UIViewController {
-    MessengerSystem * messenger;
-}
+@interface SampleTitleViewController : UIViewController
 
 - (id) initSampleTitleViewControllerWithMasterName:(NSString * )masterName;
 - (IBAction)unityOnTapped:(id)sender;
