@@ -94,7 +94,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 			break;
 		}
 		case NONE:{
-			NSLog(@"???");
+			
 			break;
 		}
 		default:
