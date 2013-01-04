@@ -6,3 +6,5 @@ iOSUnityApp/*
 UnityConnector.xcodeproj/xcuserdata/sassembla.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
 
 UnityConnector.xcodeproj/project.xcworkspace/xcuserdata/sassembla.xcuserdatad/UserInterfaceState.xcuserstate
+
+.gradle/*
