@@ -83,15 +83,30 @@ void uncaughtExceptionHandler(NSException *exception) {
 			/*
 			 generate pinView(back button inside.)
 			 */
-			SamplePinViewControler * samplePinViewCont = [[SamplePinViewControler alloc]init];
+//			SamplePinViewControler * samplePinViewCont = [[SamplePinViewControler alloc]init];
+//			
+//			BaseViewController * baseView = [[BaseViewController alloc]init];
+//			
+//			[baseView.view addSubview:samplePinViewCont.view];
+//			[messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_ADD_VIEW,
+//			 [messenger tag:@"view" val:baseView.view],
+//			 nil];
 			
-			BaseViewController * baseView = [[BaseViewController alloc]init];
+			/*
+			 JSONデータをUnityへと放り込む
+			 */
+			[messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_CONNECT,
+			 [messenger withDelay:1.0],
+			 nil];
 			
-			[baseView.view addSubview:samplePinViewCont.view];
-			[messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_ADD_VIEW,
-			 [messenger tag:@"view" val:baseView.view],
+			
+			[messenger call:KS_UNITYCONNECTOR withExec:KS_UNITYCONNECTOR_EXEC_CONNECT_2,
+			 [messenger tag:@"value" val:@"value"],
 			 nil];
 			break;
+			
+			
+			
 		}
 		case NONE:{
 			

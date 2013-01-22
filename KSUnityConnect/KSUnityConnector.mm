@@ -219,9 +219,56 @@ bool UnityParseCommandLine(int argc, char *argv[]);
 		/*
 		 adding:receive message from UnityApp
 		 */
-		
+	
+			
+		//実験
+		case KS_UNITYCONNECTOR_EXEC_CONNECT:{
+			UnitySendMessage("AppController", "flag", "");
+			break;
+		}
+			
+		case KS_UNITYCONNECTOR_EXEC_CONNECT_2:{
+			NSAssert([dict valueForKey:@"value"], @"value required");
+			const char * data = "NativeInterfaceReceiver";
+			UnitySendMessage("AppController", "flagWithData", data);
+			break;
+		}
+	}
+	
+}
+
+/*
+ 実験
+ */
+char * MakeStringCopy (const char * string) {
+	if (string == NULL)
+		return NULL;
+	
+	char * res = (char * )malloc(strlen(string) + 1);
+	strcpy(res, string);
+	return res;
+}
+
+extern "C" {
+	void toFlag() {
+		NSLog(@"flag!!");
+	}
+	
+	void toFlagWithData(char * data) {
+		NSLog(@"flagWithData %s", data);
+	}
+	
+	char * toFlagWithDataThenReturn (char * data) {
+		NSLog(@"toFlagWithDataThenReturn %s", data);
+		NSArray * languages = [NSLocale preferredLanguages];
+		NSString * currentLanguage = [languages objectAtIndex:0];
+		return MakeStringCopy([currentLanguage UTF8String]);
 	}
 }
+
+
+
+
 
 - (void) dealloc {
     [messenger closeConnection];
